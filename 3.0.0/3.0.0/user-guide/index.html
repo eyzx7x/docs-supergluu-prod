@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documenation for the Super Gluu Mobile Application">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../favicon.ico">
+      
+      <meta name="generator" content="mkdocs+mkdocs-material#1.0.3">
+    
+    
+      
+        <title>User Guide - Super Gluu Docs</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-facb31f4a3.js"></script>
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-f3ab63f78a.css">
+      
+      
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+	 <div class="md-flex__cell md-flex__cell--shrink">
+	    <a href="https://gluu.org/docs/" title="Super Gluu Docs" class=" md-logo  md-header-nav__button">
+          
+            <img src="../gluu.jpg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            User Guide
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/GluuFederation/docs-supergluu-prod/tree/3.0.0/3.0.0" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+   </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../gluu.jpg">
+      
+    </i>
+    Super Gluu Docs
+	<label for="Versions">Ver:
+	  <select id="versions" onchange="window.location.href=this.value;" style="
+		position: inherit;
+		display: inline;
+		min-width: 25%;
+		/* width: 120%; */
+		height: 22px;
+		padding: 5px 15px 5px 5px;
+		color: black;
+		border: none;
+		background: transparent;
+		outline: none;
+		-webkit-appearance: none;
+		z-index: 99;
+		cursor: pointer;
+		font-size: 10px;
+		margin-bottom: 10px;
+		border: 1px solid black;
+		overflow: auto
+	">
+	  <option value="/docs">Latest</option>
+	  <!-- <option value="/docs/2.4.4">2.4.4</option> -->
+		</select> 
+	</label>
+  </label>
+    
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/GluuFederation/docs-supergluu-prod/tree/3.0.0/3.0.0" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href=".." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        User Guide
+      </label>
+    
+    <a href="./" title="User Guide" class="md-nav__link md-nav__link--active">
+      User Guide
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#splash-screen" title="Splash screen" class="md-nav__link">
+    Splash screen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confirm-push-notification" title="Confirm Push Notification" class="md-nav__link">
+    Confirm Push Notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license-agreement" title="License agreement" class="md-nav__link">
+    License agreement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-code-protection" title="Pin Code protection" class="md-nav__link">
+    Pin Code protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-tabs" title="Application tabs" class="md-nav__link">
+    Application tabs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home" title="Home" class="md-nav__link">
+    Home
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qr-code-enrollemnt" title="QR Code Enrollemnt" class="md-nav__link">
+    QR Code Enrollemnt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" title="Logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" title="Keys" class="md-nav__link">
+    Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-notifications" title="Push Notifications" class="md-nav__link">
+    Push Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#landscape-mode-settings-ipad-support" title="Landscape mode &amp; Settings &amp; iPad support" class="md-nav__link">
+    Landscape mode &amp; Settings &amp; iPad support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../admin-guide/" title="Administaration Guide" class="md-nav__link">
+        Administaration Guide
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../developer-guide/" title="Developer Guide" class="md-nav__link">
+        Developer Guide
+      </a>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#splash-screen" title="Splash screen" class="md-nav__link">
+    Splash screen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confirm-push-notification" title="Confirm Push Notification" class="md-nav__link">
+    Confirm Push Notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license-agreement" title="License agreement" class="md-nav__link">
+    License agreement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-code-protection" title="Pin Code protection" class="md-nav__link">
+    Pin Code protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-tabs" title="Application tabs" class="md-nav__link">
+    Application tabs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home" title="Home" class="md-nav__link">
+    Home
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qr-code-enrollemnt" title="QR Code Enrollemnt" class="md-nav__link">
+    QR Code Enrollemnt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" title="Logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" title="Keys" class="md-nav__link">
+    Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" title="Settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-notifications" title="Push Notifications" class="md-nav__link">
+    Push Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#landscape-mode-settings-ipad-support" title="Landscape mode &amp; Settings &amp; iPad support" class="md-nav__link">
+    Landscape mode &amp; Settings &amp; iPad support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/GluuFederation/docs-supergluu-prod/tree/3.0.0/3.0.0/sources/user-guide\index.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+               
+              
+                
+                <h1 id="super-gluu-user-guide">Super Gluu User Guide<a class="headerlink" href="#super-gluu-user-guide" title="Permanent link">#</a></h1>
+<h2 id="splash-screen">Splash screen<a class="headerlink" href="#splash-screen" title="Permanent link">#</a></h2>
+<p><img alt="splash screen with Gluu logo" src="../../img/user-guide/launch_screen.jpg" /></p>
+<h2 id="confirm-push-notification">Confirm Push Notification<a class="headerlink" href="#confirm-push-notification" title="Permanent link">#</a></h2>
+<p>During first loading Super Gluu will ask to confirm receiving push notifications from Gluu server. If you don't approve, you can do it in Settings of device. About Push Notification please see below.</p>
+<p><img alt="confirm Push Notification" src="../../img/user-guide/push_notification_approve.jpg" /></p>
+<h2 id="license-agreement">License agreement<a class="headerlink" href="#license-agreement" title="Permanent link">#</a></h2>
+<p>To continue work with application you should accept license. You can scroll down to read all text of Super Gluu EULA. If you accept license then next time EULA text should not be visible.</p>
+<p><img alt="license agreement" src="../../img/user-guide/license_agreement.jpg" /></p>
+<h2 id="pin-code-protection">Pin Code protection<a class="headerlink" href="#pin-code-protection" title="Permanent link">#</a></h2>
+<p>To protect access to Super Gluu you can also configure Pin code. If click YES button next screen will provide you possibility to enter Pin code, this Pin code you should use for access each time when application runs. If click NO button, means you skip Pin code protection, but you can configure Pin code in Settings menu directly in application.</p>
+<p><img alt="pin protection" src="../../img/user-guide/pin_protection.jpg" /></p>
+<h2 id="application-tabs">Application tabs<a class="headerlink" href="#application-tabs" title="Permanent link">#</a></h2>
+<p>When app is loaded and you finish setup all configuration you will see main screen. On center you can see welcome label and "Scan QR code" button. On top gluu logo, on bottom tab buttons: Home, Logs, Keys, Settings.</p>
+<p>Home - main screen.
+Logs - screen shows all logs durring enrol/authentication process.
+Keys - contains all available keys saved on device, key it's unique file which app is using for authentication device on server side.
+Settings - screen where you can configure Pin code access, reset current Pin and setup count of failed attempts Pin code.</p>
+<h3 id="home">Home<a class="headerlink" href="#home" title="Permanent link">#</a></h3>
+<p><img alt="home screen" src="../../img/user-guide/main_screen.jpg" /></p>
+<h4 id="qr-code-enrollemnt">QR Code Enrollemnt<a class="headerlink" href="#qr-code-enrollemnt" title="Permanent link">#</a></h4>
+<p>To enroll your device you should enter your credentials in web page of Gluu server and see QR code, after that click Scan QR code button on Home screen of application:</p>
+<p><img alt="scanning screen" src="../../img/user-guide/scanning.jpg" /></p>
+<p>If scanning process completed and server returned correct request you will see Approve/Deny screen where are information about request and two buttons Approve &amp; Deny. To continue enrol/authentication process please click Approve button, if you want to cancel click Deny:</p>
+<p><img alt="scanning screen" src="../../img/user-guide/approve_deny_screen.jpg" /></p>
+<p>You may noticed timer on top-right side of screen, this timer shows you how much time you have to do decision Approve or Deny. If seconds = 20 timer will be in yellow, when seconds = 10 in red. You cannot to wait a lot.</p>
+<p>If you make your decision Approve/Deny screen is removed and you returned to Home screen where you may see progress messages - success or not enrol/authentication.</p>
+<p><img alt="success message" src="../../img/user-guide/success_message.jpg" /></p>
+<h3 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link">#</a></h3>
+<p>Each time when you do enrol/authentication corresponding logs are saved into logs list and you can check it in Logs tab. Success enrol/authentication in green, failed in red. </p>
+<p>If there are some logs - button Clear is enabled and you can clear all logs clicked on this button.</p>
+<p><img alt="success message" src="../../img/user-guide/no_logs.jpg" /> 
+<img alt="success message" src="../../img/user-guide/logs_screen.jpg" /> 
+<img alt="success message" src="../../img/user-guide/clear_logs_message.jpg" /></p>
+<p>Log has information about enrol/authentication process and you can check where, when and who did login. If you click on button with arrow on right side of some logs new information view will be shown.</p>
+<p>Information screen contains data about:</p>
+<ul>
+<li>Gluu server name &amp; server url</li>
+<li>User name</li>
+<li>IP address &amp; location</li>
+<li>Time &amp; Date</li>
+</ul>
+<p><img alt="success message" src="../../img/user-guide/log_info.jpg" /></p>
+<h3 id="keys">Keys<a class="headerlink" href="#keys" title="Permanent link">#</a></h3>
+<p>This tab contains all available keys for each Gluu server. Key is unique file which is generated during enrol and application is using for authentication device on server side. If you delete key for some server then you should do enrol again with new key.</p>
+<p><img alt="no keys" src="../../img/user-guide/no_keys.jpg" />   <img alt="keys screen" src="../../img/user-guide/keys_screen.jpg" /></p>
+<p>You can change key's name to new one, for this just hold on key for 3 seconds, after you will see message Do you want to change key's name? If approve you can enter new name, button "return" will save new name.</p>
+<p><img alt="rename key message" src="../../img/user-guide/rename_key_message.jpg" /></p>
+<p>Also you can delete key from list. For this you have two ways:</p>
+<p>1) Swipe to left on some key, delete button will appear on right side of key row, click on this button in confirm dialog press Yes.</p>
+<p>2) Click on key, new information screen will appears, on top right click button Delete in confirm dialog press Yes.</p>
+<p><img alt="delete key" src="../../img/user-guide/delete_key.jpg" /></p>
+<p>To see information about key just tap on key and new information dialog will be shown. On this screen you can see all information about key and using button "Delete" remove key from device.</p>
+<p><img alt="delete key" src="../../img/user-guide/key_info.jpg" /></p>
+<h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">#</a></h3>
+<p>In Settings you can configure Pin code and count of failed attempts entering Pin code.
+If during first load application you didn't setup Pin code you can do it in this screen, what you need just turn on Pin protection. You can setup new Pin code or change current. If you set up totally new Pin code you can select type of Pin code - simple 4-digit Pin or custom.</p>
+<p>You can change count of failed attempts entering Pin code, range is 5-10 attempts. If you enter wrong Pin code the same times as this count application will be locked for next 10 minutes and you should wait to have possibility enter Pin code again.</p>
+<p><img alt="settings" src="../../img/user-guide/settings_1.jpg" /></p>
+<h2 id="push-notifications">Push Notifications<a class="headerlink" href="#push-notifications" title="Permanent link">#</a></h2>
+<p>Super Gluu can receive push notifications from Gluu servers. Server sends to application enrol/authentication request the same as you get by scanning QR code directly in app. </p>
+<p><img alt="push notification" src="../../img/user-guide/push_recieved.jpg" /></p>
+<p>To order have possibility receive push notification you should approve receiving push in settings of application during first start or in Settings of device. Second step is enrol on server, during enrol application sends to server token of device, this token will be saved on server side and be used for sending push notification to device with this token.</p>
+<p>If you recieved push notification you can make decision Approve or Deny directly from push menu. You have two options:</p>
+<p>1) In case device in locked - swipe to left on push notification, you will see push menu with two buttons "Approve" and "Deny".</p>
+<p>2) In case device isn't locked - swipe down on push notification, you will see push menu with two buttons "Approve" and "Deny".</p>
+<p>3) If you click on push notification - application will open and you may see standard screen Approve/Deny with information and buttons.</p>
+<p><img alt="push notification recieved" src="../../img/user-guide/push_approve_deny.jpg" /></p>
+<p>Also Super Gluu can receive notification when application is opened and running in foreground mode. In that case you will see push view on top of main screen. This view contains text with request to server and two buttons Approve/Deny. You can make your decision directly on this view. If click Approve or Deny corresponding process will be launched.</p>
+<p><img alt="push notification when app is running" src="../../img/user-guide/push_online.png" /></p>
+<h2 id="landscape-mode-settings-ipad-support">Landscape mode &amp; Settings &amp; iPad support<a class="headerlink" href="#landscape-mode-settings-ipad-support" title="Permanent link">#</a></h2>
+<p>Super gluu can work in landscape mode, you just need rotate you device and see effect. If in landscape mode some components are hidden you can scroll up/down to see them.</p>
+<p><img alt="push notification recieved" src="../../img/user-guide/home_landscape.jpg" /> 
+<img alt="push notification recieved" src="../../img/user-guide/logs_landscape.jpg" /> 
+<img alt="push notification recieved" src="../../img/user-guide/keys_landscape.jpg" /> 
+<img alt="push notification recieved" src="../../img/user-guide/settings_landscape.jpg" /></p>
+<p>If you go to Settings of device in the bottom you may find Super Gluu aplication, there is few settings for application - push notifications, location, access to camera, pin code protection. If you want you can change configuration, but be sure it's ok for you because any change will change bevavior of application.</p>
+<p><img alt="push notification recieved" src="../../img/user-guide/settings_device.jpg" /></p>
+<p>You can run Super Gluu on iPad devices, layout should be the same for all IOS devices.
+For more information please see the <a href="http://gluu.org">Gluu Website</a></p>
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../admin-guide/" title="Administaration Guide" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Administaration Guide
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017, Gluu, Inc.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-2afe21e0b2.js"></script>
+      <script>var config={url:{base:".."}},app=new Application(config);app.initialize()</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

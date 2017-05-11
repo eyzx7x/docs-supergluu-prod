@@ -4,7 +4,7 @@
   Super Gluu is two-factor authentication application that can be used in conjunction with Gluu's free open source central authentication server, called the Gluu Server. During Enrollment oxPush2 uses the FIDO U2F endpoints built into the Gluu Server to enroll a public key. When authentication happens, there is a challenge response to ensure that the device has the respective private key.
 
 ## Enroll Super Gluu
-  During enroll/authentication app doing few steps:
+  During enroll/authentication, app does few steps:
   
   1) Scan QR code
   
@@ -24,7 +24,7 @@
       final String discoveryJson = CommunicationService.get(discoveryUrl, null);
       final U2fMetaData u2fMetaData = new Gson().fromJson(discoveryJson, U2fMetaData.class);
   
-  This metadata we should send to server:
+  This metadata should be sent to server:
   
       // need to check what we need to do enroll or authentication
       final List<byte[]> keyHandles = dataStore.getKeyHandlesByIssuerAndAppId(oxPush2Request.getIssuer(),
@@ -40,7 +40,7 @@
       validChallengeJsonResponse = CommunicationService.get(u2fEndpoint, parameters);
     
   
-  When we got result from server we can manage next step - do enroll or authentication:
+  After we get a result from server we can manage next step - do enroll or authentication:
   
         if (isEnroll) {
             tokenResponse = oxPush2RequestListener.onEnroll(challengeJson, oxPush2Request, isDeny);
@@ -50,7 +50,7 @@
         
 ## Enroll process
   
-  If you scan QR-code at first time and your device UDID doesn't attached to your user then app will do enroll, first need prepare data properties:
+  If you scan QR-code for the first time and your device UDID isn't attached to your user id then app will do enroll, first need to prepare data properties:
   
         String version = request.getString(JSON_PROPERTY_VERSION);
         String appParam = request.getString(JSON_PROPERTY_APP_ID);
@@ -60,7 +60,7 @@
         EnrollmentResponse enrollmentResponse = u2fKey.register(new EnrollmentRequest(version, appParam, challenge, oxPush2Request));
         
   
-  Durring registerring app generates an unique keyHandle, keyPair (public/private keys) to sign all data and uses ECC algoritm to encode and data.
+  During registeration app generates an unique keyHandle, keyPair (public/private keys) to sign all data and uses ECC algoritm to encode the required data.
   
         TokenEntry tokenEntry = new TokenEntry(keyPairGenerator.keyPairToJson(keyPair), enrollmentRequest.getApplication(), enrollmentRequest.getOxPush2Request().getIssuer());
         .
@@ -75,7 +75,7 @@
         byte[] signature = keyPairGenerator.sign(signedData, certificatePrivateKey);
         return new EnrollmentResponse(userPublicKey, keyHandle, vendorCertificate, signature);
 
-  Now we need make all information in one byte array. Also need to set one aditional parameter which determines if we decided approve or deny our request:
+  Now we need make all information in one byte array. Also need to set one aditional parameter which determines if we decide to approve or deny our request:
   
         JSONObject clientData = new JSONObject();
         if (isDeny){
@@ -101,7 +101,7 @@
 
         return tokenResponse;
 
-  For authentication no need to make extra data, all information is associated with your device UDID and each time gets from data store:
+  For authentication no need to make extra data, all information is associated with your device UDID and each time gets the data from data store:
   
         TokenEntry tokenEntry = dataStore.getTokenEntry(keyHandle);
         String keyPairJson = tokenEntry.getKeyPair();
@@ -113,7 +113,7 @@
         byte[] signedData = rawMessageCodec.encodeAuthenticateSignedBytes(applicationSha256, userPresence, counter, challengeSha256);
         return new AuthenticateResponse(userPresence, counter, signature);
 
-  Methods onEnroll and onSign are preparing parameters and data before call to server. For more information about this two methods you can go to Git repo.
+  Methods onEnroll and onSign are preparing parameters and data before call to server. For more information about this two methods you can get it from Git repo [super gluu](https://github.com/GluuFederation/super-gluu.)
   
   Now when we have final data we can do last call to server:
   
@@ -123,7 +123,7 @@
         
         final String resultJsonResponse = CommunicationService.post(u2fEndpoint, parameters);
   
-  String resultJsonResponse contains result JSON. From result JSON we can extract some additionl information. Also we can check if enroll/authentication was success or not using this filed - u2fOperationResult.getStatus().
+  String resultJsonResponse contains result JSON. From result JSON we can extract some additional information. Also we can check if enroll/authentication was success or not using this filed - u2fOperationResult.getStatus().
   
         // Collect output information
         LogInfo log = new LogInfo();

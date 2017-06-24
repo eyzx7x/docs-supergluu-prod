@@ -1,11 +1,22 @@
 # Super Gluu Documentation
-Super Gluu is a free and secure two-factor authentication mobile application. It is based on the [free open source oxPush2 two-factor authentication application](https://github.com/GluuFederation/oxPush2).
+Super Gluu is a secure two-factor authentication mobile application. It is based on the free open source [oxPush2 code](https://github.com/GluuFederation/oxPush2).
 
 - [User Guide](./user-guide/index.md)
 - [Admin Guide](./admin-guide/configure-oxtrust.md)
 - [Developer Guide](./developer-guide/index.md)
 
 Super Gluu can be used to achieve multi-factor authentication to applications that use a [Gluu Server](http://gluu.org/gluu-server) for login.
+
+### App Download & Pricing		
+The Super Gluu mobile app can be downloaded for free from the [Android](https://play.google.com/store/apps/details?id=gluu.super.gluu) or [iOS](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8) marketplace. 		
+ 
+ - The free version of Super Gluu includes ads.    		
+		
+ - An ad free version of the app can be purchased by users individually for $0.99 per month, or in bulk by an organization (discounts available when licenses are purchased in bulk).     		
+ 		
+ - In addition, Super Gluu can be re-skinned, custom branded, and published to the app marketplaces for your organization by Gluu. 		
+ 		
+ Learn more about our offerings on the pricing section of the [Super Gluu website](http://super.gluu.org/).  
 
 ## How it works
 Super Gluu supports two workflows. It can be used as a one-step authentication to a website, where the person scans a QR code, and the Gluu Server looks up which person is associated with that phone. It can also be used for a two step authentication, where the person logs into a website with username and password, and then the person receives an out of band push notification to the mobile device to authorize access.

@@ -5,7 +5,7 @@ Super Gluu is a free and secure two-factor authentication mobile application. It
 - [Admin Guide](./admin-guide/configure-oxtrust.md)
 - [Developer Guide](./developer-guide/index.md)
 
-Super Gluu can be used to achieve multi-factor authentication to applications that use a [Gluu Server](http://gluu.org) for login.
+Super Gluu can be used to achieve multi-factor authentication to applications that use a [Gluu Server](http://gluu.org/gluu-server) for login.
 
 ## How it works
 Super Gluu supports two workflows. It can be used as a one-step authentication to a website, where the person scans a QR code, and the Gluu Server looks up which person is associated with that phone. It can also be used for a two step authentication, where the person logs into a website with username and password, and then the person receives an out of band push notification to the mobile device to authorize access.

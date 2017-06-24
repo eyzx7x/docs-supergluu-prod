@@ -1,8 +1,7 @@
 # Super Gluu Admin Guide
+This section of the docs explains how to enable and implement Super Gluu authentication with your Gluu Server. 
 
-## Overview
-
-This section explains how to enable and implement Super Gluu authentication with your Gluu Server. 
+## Enable Super Gluu
 
 To get started, log into the Gluu Server dashboard (a.k.a. oxTrust) and do the following: 
 
@@ -17,16 +16,18 @@ Now Super Gluu is an available authentication mechanism for your Gluu Server. Th
 !!! Note 
     To make sure Super Gluu has been enabled successfully, you can check your Gluu Server's OpenID Connect configuration by navigating to the following URL: `https://<hostname>/.well-known/openid-configuration`. Find `"acr_values_supported":` and you should see `"super_gluu"`. 
 
-Now applications can request Super Gluu authentication, but what if you want to make Super Gluu your default authentication mechanism You can follow these instructions: 
+## Make Super Gluu the Default Authentication Mechanism
+
+Now applications can request Super Gluu authentication, but what if you want to make Super Gluu your default authentication mechanism? You can follow these instructions: 
 
 1. Navigate to `Configuration` > `Manage Authentication`. 
 2. Select the `Default Authentication Method` tab. 
 3. In the Default Authentication Method window you will see two options: `Default acr` and `oxTrust acr`. 
 
-- oxTrust acr controls the authentication mechanism that is presented to access the oxTrust dashboard GUI (the application you are in).    
-- Default acr controls the default authentication mechanism that is presented to users from all applications that leverage your Gluu Server for authentication.    
+- The `oxTrust acr` field controls the authentication mechanism that is presented to access the oxTrust dashboard GUI (the application you are in).    
+- The `Default acr` field controls the default authentication mechanism that is presented to users from all applications that leverage your Gluu Server for authentication.    
 
-You can change one or both fields to Super Gluu authentication as you see fit. If you want Super Gluu to be the default authentication mechanism presented to users to access oxTrust and all other applications that leverage your Gluu Server, change both fields to Super Gluu.  
+You can change one or both fields to Super Gluu authentication as you see fit. If you want Super Gluu to be the default authentication mechanism for access to oxTrust and all other applications that leverage your Gluu Server, change both fields to Super Gluu.  
  
 ## How to register a new device? 
 

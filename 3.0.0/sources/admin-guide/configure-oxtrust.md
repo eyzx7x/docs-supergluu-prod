@@ -1,6 +1,8 @@
 # Super Gluu Admin Guide
 This section of the docs explains how to enable and implement Super Gluu authentication with your Gluu Server. 
 
+If you do not already have a Gluu Server, you can [read the docs](http://gluu.org/docs/ce) to learn how to download and deploy the software for free. 
+
 ## Enable Super Gluu
 
 To get started, log into the Gluu Server dashboard (a.k.a. oxTrust) and do the following: 

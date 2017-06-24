@@ -1,50 +1,55 @@
-#Configure oxTrust
+# Super Gluu Admin Guide
 
 ## Overview
 
-This section explain on how to configure OxTrust in Gluu CE to 
-configure SuperGluu with Gluu CE Server.
+This section explains how to enable and implement Super Gluu authentication with your Gluu Server. 
+
+To get started, log into the Gluu Server dashboard (a.k.a. oxTrust) and do the following: 
 
 1. Navigate to `Configuration` > `Manage Custom Scripts`.
-2. Click on the `Person Authentication tab`: 
-3. Select the ‘SuperGluu’ Script: 
+2. In the `Person Authentication` tab find the `super_gluu` authentication module.  
+3. Scroll down and find the `Enable` check box. 
+4. Enable the script by clicking the check box.
+5. Scroll to the bottom of the page and click `Update`. 
 
-    ![config](../img/admin-guide/oxtrust-config.png)
+Now Super Gluu is an available authentication mechanism for your Gluu Server. This means that, using OpenID Connect `acr_values`, applications can now request Super Gluu authentication for users. 
+
+!!! Note 
+    To make sure Super Gluu has been enabled successfully, you can check your Gluu Server's OpenID Connect configuration by navigating to the following URL: `https://<hostname>/.well-known/openid-configuration`. Find `"acr_values_supported":` and you should see `"super_gluu"`. 
+
+Now applications can request Super Gluu authentication, but what if you want to make Super Gluu your default authentication mechanism You can follow these instructions: 
+
+1. Navigate to `Configuration` > `Manage Authentication`. 
+2. Select the `Default Authentication Method` tab. 
+3. In the Default Authentication Method window you will see two options: `Default acr` and `oxTrust acr`. 
+
+- oxTrust acr controls the authentication mechanism that is presented to access the oxTrust dashboard GUI (the application you are in).    
+- Default acr controls the default authentication mechanism that is presented to users from all applications that leverage your Gluu Server for authentication.    
+
+You can change one or both fields to Super Gluu authentication as you see fit. If you want Super Gluu to be the default authentication mechanism presented to users to access oxTrust and all other applications that leverage your Gluu Server, change both fields to Super Gluu.  
  
-4. Enable the script by ticking the check box…
-5. Ok
-6. Change Authentication method should go to ‘Super Gluu’ - ‘Super Gluu’ ( So.. in both case ( SSO operation and oxTrust login ), Gluu Server will ask for SuperGluu 2FA authN. 
+## How to register a new device? 
 
-    ![config1](../img/admin-guide/oxtrust-config1.png)
+After Super Gluu is enabled and configured you can initiate the standard login sequence to enroll your device. After successfully entering your username and passsword you will be presented with a Super Gluu QR code. If you haven't already downloaded Super Gluu, you will now need to download the app. Once downloaded, open the app and scan the QR code.
+
+You will be presented with an approve / deny screen. Approve the authentication, and now your device has been associated with your account in the Gluu Server. For all future authentications, you will receive a push notification to approve or deny the request. 
+
+## What to do about lost devices? 
+
+In the case that someone loses their device, they will need to inform the Gluu system administrator who can do the following: 
+    
+  - Find the ‘DN’ of this user from ldap. 
+    
+  - Find the oxID ‘DN’ associated with the user
+    
+  - Remove the oxID DN. 
+
+For example, let's say user ‘abc’ lost his device and wants to enroll a new device to use Super Gluu. The Gluu Server admin will do the following: 
+
+(a) Get the DN of user ‘abc’ which will be something like this:   
+`dn: inum=@!ABCD.1234.XXX.XXX.YYYY.8770,ou=people,o=@!DEFG.5678.XXX.XXX.ZZZ,o=gluu”`
  
-7. How to register a new Device? 
-
-    If you haven’t registered any device to your account; you can just complete this by scanning the QR code Gluu Server presentated to you at 2nd factor authentication level. 
-    
-    Download and install SuperGluu app from app store in your device. 
-    Perform authentication in Gluu Server. 
-    In second phase, you will see a QR code like below, just scan it with your device. Your device will be enrolled automatically with your account. 
-
-    ![supergluuQR](../img/admin-guide/supergluuQR.png)
- 
-8. What if someone lost his/her device? 
-
-They need to inform system administrator or manager of Gluu Server who will do next: 
-    
-   8.1 Find out the ‘DN’ of this user from ldap. 
-    
-   8.2 Find out the oxID ‘DN’ associated with #8.1 
-    
-   8.3 Remote 8.2 DN. 
-
-To give you an example… 
-
-Say user ‘abc’ lost his device and want to enroll new device for this two factor authentication purpose. Mr. Gluu Server admin will: 
-
-(a) Get the DN of user ‘abc’ which will be something like this… `dn: inum=@!ABCD.1234.XXX.XXX.YYYY.8770,ou=people,o=@!DEFG.5678.XXX.XXX.ZZZ,o=gluu”`
- 
-(b) Now find out the ‘oxID’ DN which is associated with this user’s DN. Might be something like this: 
-
+(b) Now find the ‘oxID’ DN which is associated with this user’s DN. It might be something like: 
 
 ```
 dn: oxId=1487683146561,ou=fido,inum=@!ABCD.1234.XXX.XXX.YYYY.8770,ou=people,o=@!DEFG.5678.XXX.XXX.ZZZ,o=gluu
@@ -61,8 +66,8 @@ oxDeviceRegistrationConf: {"publicKey":"BIGbwF…………….","attestationCert
 oxLastAccessTime: 20170
 ```
 
-(c ) Delete this oxID DN. 
+(c ) Delete the oxID DN. 
 
-Old device is gone. Now user can enroll new device. 
+Now the old device is gone and the user can enroll a new device following the instructions above regarding registering a new device. 
  
 

@@ -36,5 +36,4 @@ Super Gluu is tightly bundled with the Gluu Server identity and access managemen
 The Gluu Server does more than look at the device ID to grant access. Super Gluu uses the FIDO U2F endpoints on the Gluu Server to enroll a public key. When authentication happens, there is a challenge response to ensure that the device has the respective private key.
 
 ## NSTIC Funding
-Funding for this project was provided as part of a NSTIC pilot. The base code is available on [Github]( https://github.com/GluuFederation/oxPush2). This means that if you want to brand the application with your own logo, and make it available on the App Store, you are welcome to do so.
-
+Funding for this project was in part provided by an NSTIC pilot project in which Gluu participated. The base code is available on [Github]( https://github.com/GluuFederation/oxPush2). 

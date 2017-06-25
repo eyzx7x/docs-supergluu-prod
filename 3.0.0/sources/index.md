@@ -1,7 +1,7 @@
 # Super Gluu Documentation
 Super Gluu is a secure two-factor authentication mobile application based on the free open source [oxPush2 code](https://github.com/GluuFederation/oxPush2). Super Gluu can be used to achieve multi-factor authentication to applications that use your free open source [Gluu Server](http://gluu.org/gluu-server) for login.
 
-The Super Gluu documentation is organized into the following guides:
+The Super Gluu documentation is organized into the following sections:
 
 - [User Guide](./user-guide/index.md)
 - [Admin Guide](./admin-guide/configure-oxtrust.md)

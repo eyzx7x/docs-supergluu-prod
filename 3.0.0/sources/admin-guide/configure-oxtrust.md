@@ -3,6 +3,9 @@ This section of the docs explains how to enable and implement Super Gluu authent
 
 If you do not already have a Gluu Server, you can [read the docs](http://gluu.org/docs/ce) to learn how to download and deploy the software for free. 
 
+!!! Note
+    Super Gluu is tightly bundled with the Gluu Server. The purpose of the Gluu Server is to provide a central authentication service for many mobile and web applications. The purpose of Super Gluu is to enforce strong authentication for access to those apps that rely on the Gluu Server for login. 
+
 ## Enable Super Gluu
 
 To get started, log into the Gluu Server dashboard (a.k.a. oxTrust) and do the following: 

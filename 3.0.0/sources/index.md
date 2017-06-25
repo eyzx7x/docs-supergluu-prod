@@ -1,6 +1,8 @@
 # Super Gluu Documentation
 Super Gluu is a secure two-factor authentication mobile application based on the free open source [oxPush2 code](https://github.com/GluuFederation/oxPush2). Super Gluu can be used to achieve multi-factor authentication to applications that use your free open source [Gluu Server](http://gluu.org/gluu-server) for login.
 
+The Super Gluu documentation is organized into the following guides:
+
 - [User Guide](./user-guide/index.md)
 - [Admin Guide](./admin-guide/configure-oxtrust.md)
 - [Developer Guide](./developer-guide/index.md)
@@ -26,9 +28,9 @@ Super Gluu supports two workflows:
 - It can also be used for a two step authentication, where the person logs into a website with username and password, and then receives an out of band push notification to the mobile device to authorize access.    
 
 ### The Gluu Server
-Super Gluu is tightly bundled with the Gluu Server identity and access management platform. The Gluu Server supports the SAML and OpenID Connect open web standards for configuring single sign-on across many applications. Using these standard protocols, you can send users from web and mobile apps to your Gluu Server to handle login, and use Super Gluu to enforce strong authentication.  
+Super Gluu is tightly bundled with the Gluu Server identity and access management platform. The Gluu Server supports the SAML and OpenID Connect open web standards for configuring single sign-on across many applications. Using these standard protocols, you can send users from web and mobile apps to your Gluu Server to handle login, and use Super Gluu to enable strong authentication.  
 
-[Read the docs](https://gluu.org/docs/ce) to learn more about launching your own central authentication service using the Gluu Server. Once you have a Gluu Server, you can enable and configure Super Gluu.
+[Read the docs](https://gluu.org/docs/ce) to learn more about launching your own centralized Gluu Server authentication service. 
 
 ### FIDO U2F
 The Gluu Server does more than look at the device ID to grant access. Super Gluu uses the FIDO U2F endpoints on the Gluu Server to enroll a public key. When authentication happens, there is a challenge response to ensure that the device has the respective private key.

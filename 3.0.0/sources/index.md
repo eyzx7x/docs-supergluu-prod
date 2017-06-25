@@ -30,7 +30,7 @@ Super Gluu supports two workflows:
 ### The Gluu Server
 Super Gluu is tightly bundled with the Gluu Server identity and access management platform. The Gluu Server supports the SAML and OpenID Connect open web standards for configuring single sign-on across many applications. Using these standard protocols, you can send users from web and mobile apps to your Gluu Server to handle login, and use Super Gluu to enable strong authentication.  
 
-[Read the docs](https://gluu.org/docs/ce) to learn more about launching your own centralized Gluu Server authentication service. 
+[Read the docs](https://gluu.org/docs/ce) to learn more about launching a central authentication and authorization service using the Gluu Server. 
 
 ### FIDO U2F
 The Gluu Server does more than look at the device ID to grant access. Super Gluu uses the FIDO U2F endpoints on the Gluu Server to enroll a public key. When authentication happens, there is a challenge response to ensure that the device has the respective private key.

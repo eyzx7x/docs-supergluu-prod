@@ -25,7 +25,9 @@ Super Gluu supports two workflows:
 
 - It can be used as a one-step authentication, where the person scans a QR code, and the Gluu Server looks up which person is associated with that phone. 
 
-- It can also be used for a two step authentication, where the person logs into a website with username and password, and then receives an out of band push notification to the mobile device to authorize access.    
+- It can also be used for a two step authentication, where the person logs into a website with username and password, and then receives an out of band push notification to the mobile device to authorize access.   
+
+In both cases, the user is prompted to scan a QR code in order to register their device against their account in the Gluu Server. 
 
 ### The Gluu Server
 Super Gluu is tightly bundled with the Gluu Server identity and access management platform. The Gluu Server supports the SAML and OpenID Connect open web standards for configuring single sign-on across many applications. Using these standard protocols, you can send users from web and mobile apps to your Gluu Server to handle login, and use Super Gluu to enable strong authentication.  

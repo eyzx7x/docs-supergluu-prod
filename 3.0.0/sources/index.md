@@ -4,7 +4,7 @@ Super Gluu is a secure two-factor authentication mobile application based on the
 The Super Gluu documentation is organized into the following sections:
 
 - [User Guide](./user-guide/index.md)
-- [Admin Guide](./admin-guide/configure-oxtrust.md)
+- [Admin Guide](./admin-guide/index.md)
 - [Developer Guide](./developer-guide/index.md)
 
 ## App Download & Pricing		

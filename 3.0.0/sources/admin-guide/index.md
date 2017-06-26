@@ -1,5 +1,5 @@
 # Super Gluu Admin Guide
-This section of the docs explains how to enable and implement Super Gluu authentication with your Gluu Server. 
+This section of the docs explains how to configure your Gluu Server to support Super Gluu for strong authentication.
 
 If you do not already have a Gluu Server, you can [read the docs](http://gluu.org/docs/ce) to learn how to download and deploy the software for free. 
 

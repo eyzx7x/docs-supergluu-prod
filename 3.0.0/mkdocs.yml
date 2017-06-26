@@ -22,6 +22,6 @@ pages:
 - Home: 'index.md'
 - User Guide: 'user-guide/index.md'
 - Administaration Guide:
-    - 'Configure oxTrust': 'admin-guide/configure-oxtrust.md'
+    - 'Configure oxTrust': 'admin-guide/index.md'
 - Developer Guide: 'developer-guide/index.md'
 

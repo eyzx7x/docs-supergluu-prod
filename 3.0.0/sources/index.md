@@ -10,9 +10,9 @@ The Super Gluu documentation is organized into the following sections:
 ## App Download & Pricing		
 The Super Gluu mobile app can be downloaded for free from the [Android](https://play.google.com/store/apps/details?id=gluu.super.gluu) or [iOS](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8) marketplace. 		
  
- - By default the Super Gluu app includes ads.    		
+ - By default Super Gluu includes advertisements.    		
 		
- - Users can upgrade to Ad Free with an in-app purchase for $0.99 per month. If your organization needs Ad Free licenses for many users, [schedule a meeting](https://gluu.org/booking) with us to discuss.
+ - Users can upgrade to Ad Free with an in-app purchase for $0.99 per month. If your organization needs to purchase Ad Free licenses for many users, [schedule a meeting](https://gluu.org/booking) with us to discuss.
  		
  - In addition, Super Gluu can be re-skinned, custom branded, and published to the app marketplaces for your organization by Gluu. 	
  		

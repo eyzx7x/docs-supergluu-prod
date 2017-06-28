@@ -8,7 +8,13 @@ The Super Gluu documentation is organized into the following sections:
 - [Developer Guide](./developer-guide/index.md)
 
 ## App Download & Pricing		
-The Super Gluu mobile app can be downloaded for free from the [Android](https://play.google.com/store/apps/details?id=gluu.super.gluu) or [iOS](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8) marketplace. 		
+The Super Gluu mobile app can be downloaded for free!
+
+ - [Download the Android app](https://play.google.com/store/apps/details?id=gluu.super.gluu)
+
+ - [Download the iOS app](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8)
+
+### Business Model 		
  
  - By default Super Gluu includes advertisements.    		
 		

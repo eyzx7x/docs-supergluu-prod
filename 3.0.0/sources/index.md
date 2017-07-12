@@ -31,7 +31,7 @@ The Super Gluu mobile app can be downloaded for free!
 
  - [Download the iOS app](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8)
 
-### Business Model 		
+## Business Model 		
  
  - By default Super Gluu includes advertisements.    		
 		

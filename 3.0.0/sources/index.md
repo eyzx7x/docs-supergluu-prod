@@ -12,7 +12,10 @@ The Super Gluu documentation is organized into the following sections:
 ## Security
 During a Super Gluu authentication the Gluu Server does more than look at the device ID to grant access. Super Gluu uses the FIDO U2F endpoints on the Gluu Server to enroll a public key. The private key is stored on the device. When authentication happens, there is a challenge response to ensure that the device has the respective private key. 
 
-## Workflows
+## How to Use Super Gluu 
+In order to use Super Gluu you **must** have a Gluu Server. If you do not already have a Gluu Server, you can follow the [installation guide](https://gluu.org/docs/ce/installation-guide/) in our documentation. Once you have a Gluu Server installed you can follow the Super Gluu [admin guide](https://gluu.org/docs/supergluu/admin-guide/) to configure and begin using Super Gluu for strong authentication to applications. 
+
+### Workflows
 Super Gluu supports two workflows: 
 
 - It can be used as a one-step authentication, where the person scans a QR code, and the Gluu Server looks up which person is associated with that phone. 
@@ -20,9 +23,6 @@ Super Gluu supports two workflows:
 - It can also be used for a two step authentication, where the person logs into a website with username and password, and then receives an out of band push notification to the mobile device to authorize access.   
 
 In both cases users are prompted to scan a QR code in order to register their device against their account in the Gluu Server. In the second workflow, where a username and password are required as a first step, the user will begin receiving push notifications for all authentications after the initial device registration process. 
-
-## How to Use Super Gluu 
-In order to use Super Gluu you **must** have a Gluu Server. If you do not already have a Gluu Server, you can follow the [installation guide](https://gluu.org/docs/ce/installation-guide/) in our documentation. Once you have a Gluu Server installed you can follow the Super Gluu [admin guide](https://gluu.org/docs/supergluu/admin-guide/) to configure and begin using Super Gluu for strong authentication to applications. 
 
 ## Download Super Gluu		
 The Super Gluu mobile app can be downloaded for free!

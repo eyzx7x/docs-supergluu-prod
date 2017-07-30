@@ -116,7 +116,7 @@ For authentication no need to make extra data, all information is associated wit
         byte[] signedData = rawMessageCodec.encodeAuthenticateSignedBytes(applicationSha256, userPresence, counter, challengeSha256);
         return new AuthenticateResponse(userPresence, counter, signature);
 
-Methods onEnroll and onSign are preparing parameters and data before call to server. For more information about this two methods you can get it from Git repo [super gluu](https://github.com/GluuFederation/super-gluu.)
+Methods onEnroll and onSign are preparing parameters and data before call to server. For more information about this two methods you can get it from Git repo [super gluu](https://github.com/GluuFederation/oxPush3)
   
 Now when we have final data we can do last call to server:
   

@@ -1,7 +1,7 @@
 # Super Gluu Documentation
-Super Gluu is a secure authentication mobile application based on the free open source [oxPush3 code](https://github.com/GluuFederation/oxPush3). 
+Super Gluu is a free and secure two-factor authentication (2FA) mobile app. 
 
-Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server), a free open source identity and access management platform, and can be used to achieve strong authentication to applications that leverage Gluu for authentication.
+Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server) identity and access management platform, and can be used to achieve 2FA to web and mobile applications that leverage Gluu for authentication.
 
 Super Gluu documentation is organized into the following sections:
 
@@ -13,18 +13,18 @@ Super Gluu documentation is organized into the following sections:
 During a Super Gluu authentication the Gluu Server does more than look at the device ID to grant access. Super Gluu uses the Gluu Server's FIDO U2F endpoints to enroll a public key. The private key is stored on the device. When authentication happens, there is a challenge response to ensure that the device has the respective private key. 
 
 ## How to Deploy Super Gluu 
-Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server) open source identity and access management platform. Follow the [Gluu installation guide](https://gluu.org/docs/ce/installation-guide/) to deloy Gluu, then follow the Super Gluu [admin guide](https://gluu.org/docs/ce/authn-guide/supergluu/) to configure and begin using Super Gluu for strong authentication to applications. 
+Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server) open source identity and access management platform. Follow the [Gluu installation guide](https://gluu.org/docs/ce/installation-guide/) to deloy Gluu, then follow the Super Gluu [admin guide](https://gluu.org/docs/ce/authn-guide/supergluu/) to configure and begin using Super Gluu for strong authentication.
 
 ### Workflows
 Super Gluu supports multiple workflows, including: 
 
 - A one-step authentication, where the person scans a QR code with their Super Gluu app, and the Gluu Server looks up which person is associated with that device. 
 
-- A two-step authentication, where the person enters their username, and then receives an out-of-band push notification to the mobile device to authorize access (a.k.a identifier first authentication).
+- A two-step authentication, where the person enters their username and then receives an out-of-band push notification to the mobile device to authorize access (a.k.a identifier first authentication).
 
-- A two-step authentication, where the person enters their username and password, and then receives an out-of-band push notification to the mobile device to authorize access.   
+- A two-step authentication, where the person enters their username and password and then receives an out-of-band push notification to the mobile device to authorize access.   
 
-In any scenario, users are prompted to scan a QR code in order to bind their device against their account. In the second and third workflow listed above, users will begin receiving push notifications for all authentications after the initial device registration process. 
+In all scenarios users are prompted to scan a QR code on their first Super Gluu authentication to bind their device and account. In the second and third workflows listed above, users begin receiving push notifications for all authentications after the initial device registration process. 
 
 ## Download Super Gluu		
 Super Gluu is available for free on the iOS and Android app marketplaces! 

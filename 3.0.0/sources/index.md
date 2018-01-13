@@ -16,13 +16,15 @@ During a Super Gluu authentication the Gluu Server does more than look at the de
 Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server) open source identity and access management platform. Follow the [Gluu installation guide](https://gluu.org/docs/ce/installation-guide/) to deloy Gluu, then follow the Super Gluu [admin guide](https://gluu.org/docs/ce/authn-guide/supergluu/) to configure and begin using Super Gluu for strong authentication to applications. 
 
 ### Workflows
-Super Gluu supports two workflows: 
+Super Gluu supports multiple workflows, including: 
 
-- It can be used as a one-step authentication, where the person scans a QR code, and the Gluu Server looks up which person is associated with that phone. 
+- A one-step authentication, where the person scans a QR code with their Super Gluu app, and the Gluu Server looks up which person is associated with that device. 
 
-- It can also be used for a two step authentication, where the person logs into a website with username and password, and then receives an out of band push notification to the mobile device to authorize access.   
+- A two-step authentication, where the person enters their username, and then receives an out-of-band push notification to the mobile device to authorize access (a.k.a identifier first authentication).
 
-In both cases users are prompted to scan a QR code in order to register their device against their account in the Gluu Server. In the second workflow, where a username and password are required as a first step, the user will begin receiving push notifications for all authentications after the initial device registration process. 
+- A two-step authentication, where the person enters their username and password, and then receives an out-of-band push notification to the mobile device to authorize access.   
+
+In any scenario, users are prompted to scan a QR code in order to bind their device against their account. In the second and third workflow listed above, users will begin receiving push notifications for all authentications after the initial device registration process. 
 
 ## Download Super Gluu		
 The Super Gluu mobile app can be downloaded for free!

@@ -27,7 +27,7 @@ Super Gluu supports multiple workflows, including:
 In any scenario, users are prompted to scan a QR code in order to bind their device against their account. In the second and third workflow listed above, users will begin receiving push notifications for all authentications after the initial device registration process. 
 
 ## Download Super Gluu		
-The Super Gluu mobile app can be downloaded for free!
+Super Gluu is available for free on the iOS and Android app marketplaces! 
 
  - [Download the Android app](https://play.google.com/store/apps/details?id=gluu.super.gluu)
 
@@ -37,11 +37,11 @@ The Super Gluu mobile app can be downloaded for free!
  
  - By default Super Gluu includes advertisements.    		
 		
- - Users can upgrade to Ad Free with an in-app purchase for $0.99 per month. If your organization needs to purchase Ad Free licenses for many users, please [schedule a meeting](https://gluu.org/booking) with us to discuss bulk pricing.
- 		
- - In addition, Super Gluu can be re-skinned, custom branded, and published to the app marketplaces for your organization by Gluu, or even integrated with one of your organization's existing mobile application. 	
+ - Ads can be removed with an in-app purchase for $0.99 per month. For bulk ad-free pricing, please [schedule a call with us](https://gluu.org/booking).
+ 
+ - Super Gluu customizations and source code are available with purchase of a [Gluu VIP Support contract](https://gluu.org/pricing).
  		
  Learn more about our offerings on the pricing section of the [Super Gluu website](http://super.gluu.org/).  
 
 ## NSTIC Funding
-Funding for this project was in part provided by an [NSTIC pilot](https://www.nist.gov/itl/tig/pilot-projects#MorphoTrust_USA) project in which Gluu participated. The base code is available on [Github]( https://github.com/GluuFederation/oxPush3). 
+Funding for this project was in part provided by an [NSTIC pilot](https://www.nist.gov/itl/tig/pilot-projects#MorphoTrust_USA) project. The base code is MIT License and available on [Github]( https://github.com/GluuFederation/oxPush3). 

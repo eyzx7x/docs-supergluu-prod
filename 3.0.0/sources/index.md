@@ -1,19 +1,19 @@
 # Super Gluu Documentation
 Super Gluu is a secure authentication mobile application based on the free open source [oxPush3 code](https://github.com/GluuFederation/oxPush3). 
 
-Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server), a free open source identity and access management platform, and can be used to achieve strong authentication to applications that leverage the Gluu Server for user login.
+Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server), a free open source identity and access management platform, and can be used to achieve strong authentication to applications that leverage Gluu for authentication.
 
-The Super Gluu documentation is organized into the following sections:
+Super Gluu documentation is organized into the following sections:
 
 - [User Guide](./user-guide/index.md)
 - [Admin Guide](./admin-guide/index.md)
 - [Developer Guide](./developer-guide/index.md)
 
-## Security
-During a Super Gluu authentication the Gluu Server does more than look at the device ID to grant access. Super Gluu uses the FIDO U2F endpoints on the Gluu Server to enroll a public key. The private key is stored on the device. When authentication happens, there is a challenge response to ensure that the device has the respective private key. 
+## U2F Security
+During a Super Gluu authentication the Gluu Server does more than look at the device ID to grant access. Super Gluu uses the Gluu Server's FIDO U2F endpoints to enroll a public key. The private key is stored on the device. When authentication happens, there is a challenge response to ensure that the device has the respective private key. 
 
-## How to Use Super Gluu 
-In order to use Super Gluu you **must** have a Gluu Server. If you do not already have a Gluu Server, you can follow the [installation guide](https://gluu.org/docs/ce/installation-guide/) in our documentation. Once you have a Gluu Server installed you can follow the Super Gluu [admin guide](https://gluu.org/docs/supergluu/admin-guide/) to configure and begin using Super Gluu for strong authentication to applications. 
+## How to Deploy Super Gluu 
+Super Gluu is tightly bundled with the [Gluu Server](https://gluu.org/gluu-server) open source identity and access management platform. Follow the [Gluu installation guide](https://gluu.org/docs/ce/installation-guide/) to deloy Gluu, then follow the Super Gluu [admin guide](https://gluu.org/docs/ce/authn-guide/supergluu/) to configure and begin using Super Gluu for strong authentication to applications. 
 
 ### Workflows
 Super Gluu supports two workflows: 
@@ -42,4 +42,4 @@ The Super Gluu mobile app can be downloaded for free!
  Learn more about our offerings on the pricing section of the [Super Gluu website](http://super.gluu.org/).  
 
 ## NSTIC Funding
-Funding for this project was in part provided by an [NSTIC pilot](https://www.nist.gov/itl/tig/pilot-projects#MorphoTrust_USA) project in which Gluu participated. The base code is available on [Github]( https://github.com/GluuFederation/oxPush2). 
+Funding for this project was in part provided by an [NSTIC pilot](https://www.nist.gov/itl/tig/pilot-projects#MorphoTrust_USA) project in which Gluu participated. The base code is available on [Github]( https://github.com/GluuFederation/oxPush3). 

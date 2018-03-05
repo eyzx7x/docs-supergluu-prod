@@ -21,6 +21,6 @@ pages:
 
 - Home: 'index.md'
 - User Guide: 'user-guide/index.md'
-- Administaration Guide: 'admin-guide/index.md'
+- Administration Guide: 'admin-guide/index.md'
 - Developer Guide: 'developer-guide/index.md'
 

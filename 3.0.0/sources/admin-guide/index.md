@@ -57,20 +57,20 @@ For example, let's say user ‘abc’ lost his device and wants to enroll a new 
  
 (b) Now find the ‘oxID’ DN which is associated with this user’s DN. It might be something like: 
 
-```
-dn: oxId=1487683146561,ou=fido,inum=@!ABCD.1234.XXX.XXX.YYYY.8770,ou=people,o=@!DEFG.5678.XXX.XXX.ZZZ,o=gluu
-objectClass: oxDeviceRegistration
-objectClass: top
-oxDeviceData: {"uuid":"b82abc-a1b2-3abc-bcccc-2222222222222","type":"normal","platform":"android","name":"zico","os_name":"kitkat","os_version":"4.4.4","push_token":"dddddddddd:aaaaaa_58_cccccc_4t_bbbbbbbbbbbbb_aaaaaaaaaaaaaa_ggggggggg"}
-oxDeviceKeyHandle: fyyyyyyyyyyyyy_jaaaaaaaaaaaa_mKJw
-oxStatus: active
-oxApplication: https://test.gluu.org/identity/authentication/authcode
-oxCounter: 2
-creationDate: 20170221131906.559Z
-oxId: 11111111111111111
-oxDeviceRegistrationConf: {"publicKey":"BIGbwF…………….","attestationCert":"MIICJjCCAcygAwIBAgKBgQDzLA-......L5ztE"}
-oxLastAccessTime: 20170
-```
+> ```
+> dn: oxId=1487683146561,ou=fido,inum=@!ABCD.1234.XXX.XXX.YYYY.8770,ou=people,o=@!DEFG.5678.XXX.XXX.ZZZ,o=gluu
+> objectClass: oxDeviceRegistration
+> objectClass: top
+> oxDeviceData: {"uuid":"b82abc-a1b2-3abc-bcccc-2222222222222","type":"normal","platform":"android","name":"zico","os_name":"kitkat","os_version":"4.4.4","push_token":"dddddddddd:aaaaaa_58_cccccc_4t_bbbbbbbbbbbbb_aaaaaaaaaaaaaa_ggggggggg"}
+> oxDeviceKeyHandle: fyyyyyyyyyyyyy_jaaaaaaaaaaaa_mKJw
+> oxStatus: active
+> oxApplication: https://test.gluu.org/identity/authentication/authcode
+> oxCounter: 2
+> creationDate: 20170221131906.559Z
+> oxId: 11111111111111111
+> oxDeviceRegistrationConf: {"publicKey":"BIGbwF…………….","attestationCert":"MIICJjCCAcygAwIBAgKBgQDzLA-......L5ztE"}
+> oxLastAccessTime: 20170
+> ```
 
 (c) Delete the oxID DN. 
 

@@ -1,7 +1,7 @@
 # Super Gluu Admin Guide
-This section explains how to configure your Gluu Server to support Super Gluu for strong authentication.
+This section explains how to configure the Gluu Server to support Super Gluu for strong authentication.
 
-If you do not already have a Gluu Server, you can [read the docs](http://gluu.org/docs/ce) to learn how to download and deploy the software for free. 
+If you do not already have a Gluu Server, [read the docs](http://gluu.org/docs/ce) to learn how to download and deploy the software for free. 
 
 !!! Note
     Super Gluu is tightly bundled with the Gluu Server. The purpose of the Gluu Server is to provide a central authentication service for many mobile and web applications. The purpose of Super Gluu is to enforce strong authentication for access to those apps that rely on the Gluu Server for login. 
@@ -11,34 +11,34 @@ If you do not already have a Gluu Server, you can [read the docs](http://gluu.or
 To get started, log into the Gluu Server dashboard (a.k.a. oxTrust) and do the following: 
 
 1. Navigate to `Configuration` > `Manage Custom Scripts`
-2. In the `Person Authentication` tab find the `super_gluu` authentication module  
-3. Scroll down and find the `Enable` check box 
-4. Enable the script by clicking the check box
-5. Scroll to the bottom of the page and click `Update` 
+1. In the `Person Authentication` tab find the `super_gluu` authentication module  
+1. Scroll down and find the `Enable` check box 
+1. Enable the script by clicking the check box
+1. Scroll to the bottom of the page and click `Update` 
 
 Now, Super Gluu is an available authentication mechanism for your Gluu Server. This means that, using OpenID Connect `acr_values`, applications can now request Super Gluu authentication for users. 
 
 !!! Note 
-    To make sure Super Gluu has been enabled successfully, you can check your Gluu Server's OpenID Connect configuration by navigating to the following URL: `https://<hostname>/.well-known/openid-configuration`. Find `"acr_values_supported":` and you should see `"super_gluu"`. 
+    To make sure Super Gluu has been enabled successfully, check your Gluu Server's OpenID Connect configuration by navigating to the following URL: `https://<hostname>/.well-known/openid-configuration`. Find `"acr_values_supported":` and look for `"super_gluu"`. 
 
 ## Make Super Gluu the Default Authentication Mechanism
 
-Now applications can request Super Gluu authentication, but what if you want to make Super Gluu your default authentication mechanism? You can follow these instructions: 
+Now, applications can request Super Gluu authentication, but what if you want to make Super Gluu your default authentication mechanism? Follow these instructions: 
 
 1. Navigate to `Configuration` > `Manage Authentication` 
 2. Select the `Default Authentication Method` tab 
-3. In the Default Authentication Method window you will see two options: `Default acr` and `oxTrust acr` 
+3. In the Default Authentication Method window, see two options: `Default acr` and `oxTrust acr` 
 
     - The `oxTrust acr` field controls the authentication mechanism that is presented to access the oxTrust dashboard GUI (the application you are in)    
     - The `Default acr` field controls the default authentication mechanism that is presented to users from all applications that leverage your Gluu Server for authentication    
 
-You can change one or both fields to Super Gluu authentication as you see fit. If you want Super Gluu to be the default authentication mechanism for access to oxTrust and all other applications that leverage your Gluu Server, change both fields to Super Gluu.  
+Change one or both fields to Super Gluu authentication as you see fit. To make Super Gluu the default authentication mechanism for access to oxTrust and all other applications that leverage your Gluu Server, change both fields to Super Gluu.  
  
 ## How to Register a New Device 
 
-After Super Gluu is enabled and configured you can initiate the standard login sequence to enroll your device. After successfully entering your username and password you will be presented with a Super Gluu QR code. If you haven't already downloaded Super Gluu, you will now need to download the app. Once downloaded, open the app and scan the QR code.
+After Super Gluu is enabled and configured, initiate the standard login sequence to enroll the device. After successfully entering the username and password you will be presented with a Super Gluu QR code. If you haven't already downloaded Super Gluu, you will now need to download the app. Once downloaded, open the app and scan the QR code.
 
-You will be presented with an approve/deny screen. Approve the authentication, and now your device has been associated with your account in the Gluu Server. For all future authentications, you will receive a push notification to approve or deny the request. 
+The app will prompt to approve or deny. Approve the authentication, and now the device has been associated with your account in the Gluu Server. For all future authentications, you will receive a push notification to approve or deny the request. 
 
 ## What to Do About Lost Devices? 
 
@@ -72,7 +72,6 @@ For example, let's say user ‘abc’ lost his device and wants to enroll a new 
 > oxLastAccessTime: 20170
 > ```
 
-(c) Delete the oxID DN. 
+(c) Delete the oxID DN  
 
-Now the old device is gone, and the user can enroll a new device 
-following the instructions above, regarding registering a new device.  
+Now the old device is gone, and the user can enroll a new device following the instructions above, regarding registering a new device.  

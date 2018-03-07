@@ -32,7 +32,6 @@ During enrollment and authentication, the app goes through a few steps:
   - This metadata is sent to the server:
   
   > ``` 
-  > // need to check if we need to enroll or authenticate
   > final List<byte[]> keyHandles = dataStore.getKeyHandlesByIssuerAndAppId(oxPush2Request.getIssuer(),
   > oxPush2Request.getApp());
   > final boolean isEnroll = (keyHandles.size() == 0) || StringUtils.equals(oxPush2Request.getMethod(), "enroll");

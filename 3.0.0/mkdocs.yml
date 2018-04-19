@@ -1,7 +1,7 @@
 site_name: Super Gluu Docs
 site_description: Documenation for the Super Gluu Mobile Application
 site_favicon: 'favicon.ico'
-copyright: Copyright &copy; 2017, Gluu, Inc.
+copyright: Copyright &copy; 2018, Gluu, Inc.
 docs_dir: sources
 repo_url: https://github.com/GluuFederation/docs-supergluu-prod/tree/3.0.0/3.0.0
 #theme: readthedocs

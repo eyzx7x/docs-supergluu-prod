@@ -101,8 +101,6 @@ Super Gluu can receive a notification when the application is running in the for
 
 In the device settings are a few settings for Super Gluu - push notifications, location, access to camera, and PIN protection. Any change made in the device settings will take effect in the application.
 
-![push notification recieved](../img/user-guide/settings_device.jpg)
-
 Super Gluu can run on iPads, and the layout is the same for all IOS devices.
 
 For more information, please see the [Gluu Website](http://gluu.org)

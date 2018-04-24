@@ -73,7 +73,7 @@ The information screen contains data about:
 
 This tab contains all available keys for each Gluu server. A key is a unique file that is generated during enrollment, and is used to authenticate the device on the server. If a key for a server is deleted, enroll again with a new key.
 
-![no keys](../img/user-guide/no_keys.jpg)   ![keys screen](../img/user-guide/up_key.jpg)
+![keys screen](../img/user-guide/up_key.jpg)
 
 Change a key's name, swipe left on it and tap the green button. To delete a key, swipe left on the key, then tap the red button.
 

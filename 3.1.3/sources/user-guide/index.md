@@ -6,7 +6,7 @@ This guide will show how to use the Super Gluu two-factor authentication mobile 
 ## Initial Setup
 
 ### Camera Access Prompt
-After installation, Super Gluu will request access to use your camera. The only time that the camera will be used is to scan a QR code to set up your two-factor authentication.
+After installation, Super Gluu will request access to use your camera, which is used to scan a QR code to set up your two-factor authentication.
 
 ### Choose Login Method
 
@@ -18,7 +18,7 @@ For additional security, Super Gluu gives you the option to configure either a P
 
 ### Confirm Push Notification
 
-Next, it will ask for permission to send push notifications from the Gluu Server. This choice can be changed later in your device settings. More information about the push notification will be covered later in the document.
+Next, it will ask for permission to send push notifications from the Gluu Server. This choice can be changed later in the device settings. More information about the push notification will be covered later in the document.
 
 ![confirm Push Notification](../img/user-guide/up_push_notifications.jpg)
 
@@ -34,13 +34,13 @@ To enroll a device, enter the credentials in your Gluu Server web app to generat
 
 ![scanning screen](../img/user-guide/up_qr_code.jpg)
 
-If the scanning process is completed and the server returns the request correctly, it will prompt to `Approve` or `Deny`. To continue the enrollment/authentication process, click `Approve`:
+After it scans the code and the server returns the request correctly, it will prompt to `Approve` or `Deny`. To continue the enrollment/authentication process, click `Approve`:
 
 ![scanning screen](../img/user-guide/up_approve_prompt.jpg)
 
-The timer on the top right of the screen shows the time limit to choose to `Approve` or `Deny`. The number color will change: yellow if it's under 20 seconds, red if it's under 10.
+The timer on the top right of the screen shows the time limit to choose to `Approve` or `Deny`. As time runs out, the number's color will change: yellow if it's under 20 seconds, red if it's under 10.
 
-Next, it will redirect to the main page and display whether it was successful or not.
+Next, it will redirect to the main page and display a success message.
 
 ![success message](../img/user-guide/up_success.jpg)
 
@@ -54,7 +54,7 @@ After pressing the menu button, you'll get the option to view logs, keys, settin
 
 Each time it enrolls or authenticates a device, the app will save corresponding logs in the Logs tab. The log details whether authentication was successful, with more details available if the log is tapped on.
 
-Clear these logs if necessary by swiping left on the log, then tapping the red button.
+Clear these logs if desired by swiping left on the log, then tapping the red button.
 
 ![delete log](../img/user-guide/up_log_delete.jpg)
 
@@ -75,7 +75,7 @@ This tab contains all available keys for each Gluu server. A key is a unique fil
 
 ![keys screen](../img/user-guide/up_key.jpg)
 
-Change a key's name, swipe left on it and tap the green button. To delete a key, swipe left on the key, then tap the red button.
+To change a key's name, swipe left on it and tap the green button. To delete a key, swipe left on the key, then tap the red button.
 
 ![delete key](../img/user-guide/up_key_delete.jpg)
 
@@ -85,7 +85,7 @@ In the Settings tab, there are options to configure the PIN or TouchID.
 
 ## Push Notifications
 
-Super Gluu can receive push notifications from Gluu servers. The server can send an enrollment or authentication request to the application, as if it scanned the QR code directly. 
+Super Gluu can receive push notifications from Gluu Servers. The server can send an enrollment or authentication request to the application, as if it scanned the QR code directly. 
 
 ![push notification](../img/user-guide/up_push_notification.jpg)
 
@@ -93,13 +93,13 @@ After choosing to receive push notifications either during initial setup or thro
 
 After receiving the notification, tap `Approve` or `Deny` directly from the push menu.
 
-Super Gluu can receive a notification when the application is running in the foreground. It will look just like the original authentication screen
+Super Gluu can receive a notification when the application is running in the foreground. It will look just like the original authentication screen.
 
 ![push notification when app is running](../img/user-guide/up_approve_prompt.jpg)
 
 ## Device Settings, iPad Support
 
-In the device settings are a few settings for Super Gluu - push notifications, location, access to camera, and PIN protection. Any change made in the device settings will take effect in the application.
+There are a few options for Super Gluu in the device settings - push notifications, location, access to camera, and PIN protection. Any change made in the device settings will take effect in the application.
 
 Super Gluu can run on iPads, and the layout is the same for all IOS devices.
 

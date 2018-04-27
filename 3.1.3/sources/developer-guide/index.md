@@ -45,7 +45,7 @@ During enrollment and authentication, the app goes through a few steps:
   > validChallengeJsonResponse = CommunicationService.get(u2fEndpoint, parameters);
   > ``` 
   
-  - When the result comes back, it decides to enroll a new device or authenticate an existing one:
+  - When the result comes back, it decides whether to enroll a new device or authenticate an existing one:
   
   > ``` 
   > if (isEnroll) {
@@ -129,7 +129,7 @@ For authentication, all information is associated with your device UDID and the 
 
 The onEnroll and onSign methods prepare the parameters and data before the call to the server. For more information about these two methods, see the [Super Gluu](https://github.com/GluuFederation/oxPush3) Git repo.
   
-Now, the app makes one last call to server:
+Now, the app makes one last call to the server:
   
   > ```
   > final Map<String, String> parameters = new HashMap<String, String>();

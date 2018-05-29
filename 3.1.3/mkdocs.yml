@@ -13,7 +13,6 @@ extra:
     
 markdown_extensions:
 - admonition
-
 - toc:
      permalink: '#'
      

@@ -156,7 +156,7 @@ The string `resultJsonResponse` contains the JSON result. The app extracts some 
 Here is a method for testing Super Gluu locally on a **non** public server.
 
 !!! Warning 
-    The following testing steps mimic a MITM attack, so needless to say, these instructions are **for developement purpouse only!**
+    The following testing steps mimic a MITM attack, so needless to say, these instructions are **for developement purposes only!**
 
 1. In VM settings change Network Adapter connection type from NAT to Bridget // CE and Mobile phone connected to WiFi should be in same local network
 

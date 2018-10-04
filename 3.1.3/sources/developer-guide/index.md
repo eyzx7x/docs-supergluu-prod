@@ -158,15 +158,15 @@ Here is a method for testing Super Gluu locally on a **non** public server.
 !!! Warning 
     The following testing steps mimic a MITM attack, so needless to say, these instructions are **for developement purposes only!**
 
-1. In VM settings change Network Adapter connection type from NAT to Bridget // CE and Mobile phone connected to WiFi should be in same local network
+1. In your VM settings change Network Adapter connection type from NAT to Bridget; Your Gluu Server and smart phone should be connected to WiFi on same local network
 
-1. Log into VM and run in terminal `ifconfig` to get IP address of your Gluu Server.
+1. Log into your VM and run in terminal `ifconfig` to get the IP address of your Gluu Server
 
 1. Install Gluu Server as usual
 
 1. Enable Super Gluu
 
-1. Update hosts file on machine where you run browser to log in. Example: `192.168.1.232`	`c67.example.info`
+1. Update the host file on the machine where you are running the browser to log in. Example: `192.168.1.232`	`c67.example.info`
 
 1. Run `ipconfig` / `ifconfig` on machine where you are planning to run your DNS server.
 

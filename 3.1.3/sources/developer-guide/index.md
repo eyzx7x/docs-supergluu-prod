@@ -150,3 +150,32 @@ The string `resultJsonResponse` contains the JSON result. The app extracts some 
   > log.setCreatedDate(String.valueOf(System.currentTimeMillis()));//oxPush2Request.getCreated());
   > log.setMethod(oxPush2Request.getMethod());
   > ```
+
+## Testing locally 
+
+Here is a method for testing Super Gluu locally on a **non** public server.
+
+!!! Warning 
+    The following testing steps mimic a MITM attack, so needless to say, these instructions are **for developement purpouse only!**
+
+1. In VM settings change Network Adapter connection type from NAT to Bridget // CE and Mobile phone connected to WiFi should be in same local network
+
+1. Log into VM and run in terminal `ifconfig` to get IP address of your Gluu Server.
+
+1. Install Gluu Server as usual
+
+1. Enable Super Gluu
+
+1. Update hosts file on machine where you run browser to log in. Example: `192.168.1.232`	`c67.example.info`
+
+1. Run `ipconfig` / `ifconfig` on machine where you are planning to run your DNS server.
+
+1. Create `dns.config` file in folder where there is `dedserver.jar`. Exmaple file content: `u144.example.info.=192.168.1.232`
+
+1. Run DNS server using command like this: `java -jar dedserver.jar`
+
+1. On mobile phone open WiFi connection details and specify DNS server IP  from step 6
+
+1. Now test Super Gluu.
+
+1. After you finish testing, don't forget to change your WiFi connection type on mobile phone back to use automatic settings.

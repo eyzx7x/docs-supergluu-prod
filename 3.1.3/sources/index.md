@@ -26,6 +26,10 @@ Super Gluu supports multiple workflows, including:
 
 In all scenarios, users are prompted to scan a QR code on their first Super Gluu authentication to bind their device and account. In the second and third workflows listed above, users begin receiving push notifications for all authentications after the initial device registration process. 
 
+### Testing locally 
+
+Super Gluu security is based on SSL, and therefore expects a public server. To test locally on a **non-public** server, [follow these steps](./developer-guide/index.md#testing-locally)
+
 ## Download Super Gluu		
 Super Gluu is available for free on the iOS and Android app marketplaces! 
 

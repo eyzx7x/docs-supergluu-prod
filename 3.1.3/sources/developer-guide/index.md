@@ -153,18 +153,16 @@ The string `resultJsonResponse` contains the JSON result. The app extracts some 
 
 ## Testing locally 
 
-Here is a method for testing Super Gluu locally on a **non** public server.
+The following is a method for testing Super Gluu locally on a **non-public** server. This guide assumes a Gluu Server has been installed and is operational. 
 
 !!! Warning 
     The following testing steps mimic a MITM attack, so needless to say, these instructions are **for developement purposes only!**
 
-1. In your VM settings change Network Adapter connection type from NAT to Bridget; Your Gluu Server and smart phone should be connected to WiFi on same local network
+1. In the Gluu Server VM settings, change Network Adapter connection type from NAT to Bridget; The Gluu Server and smart phone should be connected to WiFi on same local network
 
-1. Log into your VM and run in terminal `ifconfig` to get the IP address of your Gluu Server
+1. Log into the VM and run in the terminal `ifconfig` to get the IP address of the Gluu Server
 
-1. Install Gluu Server as usual
-
-1. Enable Super Gluu
+1. In oxTrust, enable the Super Gluu authentication script 
 
 1. Update the host file on the machine where you are running the browser to log in. Example: `192.168.1.232`	`c67.example.info`
 

@@ -158,22 +158,22 @@ The following is a method for testing Super Gluu locally on a **non-public** ser
 !!! Warning 
     The following testing steps mimic a MITM attack, so needless to say, these instructions are **for developement purposes only!**
 
-1. In the Gluu Server VM settings, change Network Adapter connection type from NAT to Bridget; The Gluu Server and smart phone should be connected to WiFi on same local network
+1. In the Gluu Server VM settings, change Network Adapter connection type from NAT to Bridged; The Gluu Server and smartphone should be connected to WiFi on the same local network
 
-1. Log into the VM and run in the terminal `ifconfig` to get the IP address of the Gluu Server
+1. Log into the VM and run `ifconfig` in the terminal to get the IP address of the Gluu Server
 
 1. In oxTrust, enable the Super Gluu authentication script 
 
 1. Update the host file on the machine where you are running the browser to log in. Example: `192.168.1.232`	`c67.example.info`
 
-1. Run `ipconfig` / `ifconfig` on machine where you are planning to run your DNS server.
+1. Run `ipconfig` / `ifconfig` on the machine where you are planning to run your DNS server.
 
-1. Create `dns.config` file in folder where there is `dedserver.jar`. Exmaple file content: `u144.example.info.=192.168.1.232`
+1. Create a `dns.config` file in the folder with `dedserver.jar`. Example file content: `u144.example.info.=192.168.1.232`
 
-1. Run DNS server using command like this: `java -jar dedserver.jar`
+1. Run the DNS server using a command like this: `java -jar dedserver.jar`
 
-1. On mobile phone open WiFi connection details and specify DNS server IP  from step 6
+1. On your mobile phone, open the WiFi connection details and specify the DNS server IP from step 6
 
-1. Now test Super Gluu.
+1. Now you can test Super Gluu
 
-1. After you finish testing, don't forget to change your WiFi connection type on mobile phone back to use automatic settings.
+1. After you finish testing, don't forget to change your WiFi connection type on the mobile phone back to use the automatic settings.

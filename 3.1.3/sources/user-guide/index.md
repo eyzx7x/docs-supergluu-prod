@@ -10,7 +10,10 @@ After installation, Super Gluu will request access to use your camera, which is 
 
 ### Choose Login Method
 
-For additional security, Super Gluu gives you the option to configure either a PIN or TouchID to access Super Gluu. This choice can be changed in the application settings later.
+For additional security, Super Gluu gives you the option to configure either a passcode or TouchID to access Super Gluu. This choice can be changed in the application settings later.
+
+!!! Note
+    After 5 unsuccessful attempts to enter the passcode, the app is locked for 10 minutes.
 
 ![login choice](../img/user-guide/choose_login.jpg)
 ![pin access](../img/user-guide/pin_settings.jpg)
@@ -46,7 +49,7 @@ Next, it will redirect to the main page and display a success message.
 
 ## Menu
 
-After pressing the menu button, you'll get the option to view logs, keys, settings, and help files.
+After pressing the menu button, you'll get the option to view logs, keys, settings, and help files. You can also check the current app version in the bottom right corner. Tapping it for several seconds will show the details of the latest commit.
 
 ![menu](../img/user-guide/settings.jpg)
 
@@ -81,7 +84,7 @@ To change a key's name, swipe left on it and tap the green button. To delete a k
 
 ### Settings
 
-In the Settings tab, there are options to configure the PIN or TouchID.
+In the Settings tab, there are options to configure the passcode or TouchID.
 
 ## Push Notifications
 
@@ -99,7 +102,7 @@ Super Gluu can receive a notification when the application is running in the for
 
 ## Device Settings, iPad Support
 
-There are a few options for Super Gluu in the device settings - push notifications, location, access to camera, and PIN protection. Any change made in the device settings will take effect in the application.
+There are a few options for Super Gluu in the device settings - push notifications, location, access to camera, and passcode protection. Any change made in the device settings will take effect in the application.
 
 Super Gluu can run on iPads, and the layout is the same for all IOS devices.
 

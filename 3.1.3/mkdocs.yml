@@ -6,20 +6,16 @@ docs_dir: sources
 repo_url: https://github.com/GluuFederation/docs-supergluu-prod/tree/3.1.3/3.1.3
 #theme: readthedocs
 theme_dir: ./theme/material/
-
 extra:
     version: '3.1.3'
     logo: 'gluu.png'
-    
 markdown_extensions:
 - admonition
 - toc:
      permalink: '#'
 - pymdownx.superfences
-pages:
-
+nav:
 - Home: 'index.md'
 - User Guide: 'user-guide/index.md'
 - Administration Guide: 'admin-guide/index.md'
 - Developer Guide: 'developer-guide/index.md'
-

@@ -1,47 +1,42 @@
 # Project information
-site_name: Super Gluu Docs
+site_name: Super Gluu 3.1.3 Docs
 site_description: Documentation for the Super Gluu Mobile Application
-site_favicon: 'favicon.ico'
 
 # Copyright
 copyright: Copyright &copy; 2019, Gluu, Inc.
 
 # Repository
 docs_dir: sources
-#repo_name: GluuFederation/docs-supergluu-prod
-repo_url: https://github.com/GluuFederation/docs-supergluu-prod/tree/3.1.3/3.1.3
-#repo_url: https://github.com/GluuFederation/docs-supergluu-prod/
-#edit_uri: edit/3.1.3/3.1.3/sources
+repo_name: GluuFederation/docs-supergluu-prod
+repo_url: https://github.com/GluuFederation/docs-supergluu-prod/
+edit_uri: edit/3.1.3/3.1.3/sources
 
 # Configuration
-theme_dir: theme/material
-#theme: 
-#    name: material
-#    palette:
-#        primary: 'green'
-#        accent: 'green'
-#    logo: 'gluu.jpg'
-#    favicon: 'favicon.ico'
+theme: 
+    name: material
+    palette:
+        primary: 'green'
+        accent: 'green'
+    logo: 'gluu.jpg'
+    favicon: 'favicon.ico'
 extra:
     version: '3.1.3'
-    logo: 'gluu.png'
     
 # Extensions
 markdown_extensions:
 - admonition
 - toc:
      permalink: '#'
-#- codehilite     
+- codehilite     
 - pymdownx.superfences
 
 # Navigation
-#nav:
-#- 'Versions':
-#    - '3.1.3': 'https://gluu.org/docs/supergluu/3.1.3/'
-#    - '3.0.0': 'https://gluu.org/docs/supergluu/3.0.0/'
-#- ' ': 'https:/gluu.org/docs'
-#- ' ': 'https:/gluu.org/docs'
-pages:
+nav:
+- 'Versions':
+    - '3.1.3': 'https://gluu.org/docs/supergluu/3.1.3/'
+    - '3.0.0': 'https://gluu.org/docs/supergluu/3.0.0/'
+- ' ': 'https:/gluu.org/docs'
+- ' ': 'https:/gluu.org/docs'
 - Home: 'index.md'
 - User Guide: 'user-guide/index.md'
 - Administration Guide: 'admin-guide/index.md'

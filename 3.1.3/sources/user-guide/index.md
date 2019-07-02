@@ -3,6 +3,9 @@
 ## Overview
 This guide will show how to use the Super Gluu two-factor authentication mobile application. It covers initial set-up, managing keys and logs, and general settings.
 
+!!! Note
+    Screenshots below are shown in iOS. Android is roughly the same. 
+    
 ## Initial Setup
 
 ### Camera Access Prompt

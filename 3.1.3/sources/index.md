@@ -18,7 +18,7 @@ Super Gluu is tightly bundled with the Gluu Server. Follow the [Gluu installatio
 ### Workflows
 Super Gluu supports multiple workflows, including: 
 
-- A one-step authentication, where the person scans a QR code with their Super Gluu app, and the Gluu Server looks up which person is associated with that device. 
+- A one-step, passwordless authentication, where the person scans a QR code with their Super Gluu app, and the Gluu Server looks up which person is associated with that device. 
 
 - A two-step authentication, where the person enters their username and then receives an out-of-band push notification to the mobile device to authorize access (a.k.a identifier first authentication).
 
@@ -37,15 +37,3 @@ Super Gluu is available for free on the iOS and Android app marketplaces!
 
  - [Download the iOS app](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8)
 
-## Business Model 		
- 
- - By default, Super Gluu includes advertisements.    		
-		
- - Ads can be removed with an in-app purchase for $0.99 per month. For bulk ad-free pricing, please [schedule a call with us](https://gluu.org/booking).
- 
- - Super Gluu customizations and source code are available with the purchase of a [Gluu VIP Support contract](https://gluu.org/pricing).
- 		
- Learn more about our offerings on the pricing section of the [Super Gluu website](http://super.gluu.org/).  
-
-## NSTIC Funding
-Funding for this project was in part provided by an [NSTIC pilot](https://www.nist.gov/itl/tig/pilot-projects#MorphoTrust_USA) project. The base code is MIT License and available on [Github](https://github.com/GluuFederation/oxPush3). 

@@ -12,7 +12,7 @@ Super Gluu documentation is organized into the following sections:
 ## U2F Security
 During Super Gluu authentication, the Gluu Server does more than look at the device ID to grant access. Super Gluu uses the Gluu Server's FIDO U2F endpoints to enroll a public key. The private key is stored on the device. To authenticate, the Gluu Server sends a challenge response to the device to check for the corresponding private key.
 
-## How to Deploy Super Gluu 
+## How to Use Super Gluu 
 Super Gluu is tightly bundled with the Gluu Server. Follow the [Gluu installation guide](https://gluu.org/docs/ce/installation-guide/) to deploy Gluu, then follow the Super Gluu [admin guide](https://gluu.org/docs/ce/authn-guide/supergluu/) to configure and begin using Super Gluu for strong authentication.
 
 ### Workflows

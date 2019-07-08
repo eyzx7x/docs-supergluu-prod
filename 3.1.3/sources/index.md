@@ -37,3 +37,20 @@ Super Gluu is available for free on the iOS and Android app marketplaces!
 
  - [Download the iOS app](https://itunes.apple.com/us/app/super-gluu/id1093479646?ls=1&mt=8)
 
+## Contributors 
+
+The next version of Super Gluu will support localization in many languages. We'd like to extend our sincere appreciation to the following people for helping translate Super Gluu content:
+
+- Jose Gonzalez, [Gluu](https://gluu.org)
+- Gasmyr Mougang, [Gluu](https://gluu.org)
+- Yumi Sano, [iBridge](https://ibrdg.co.jp/)
+- Andrea Patricelli, [Tirasa](https://www.tirasa.net/)
+- Yuriy Zabrovarrnay, [Gluu](https://gluu.org)
+- Aliaksander Sameseu, [Gluu](https://gluu.org)
+- Andre Koot, [Nixu](https://nixu.com)
+- Mohammad Abudayyeh, [Gluu](https://gluu.org)
+- Ganesh Dutt Sharma, [Gluu](https://gluu.org)
+- Mohib Zico, [Gluu](https://gluu.org)
+- Mustafa Baser, [Gluu](https://gluu.org)
+
+If you'd like to provide translations for a lanugage not currently supported, please [contact us](https://gluu.org/contact).

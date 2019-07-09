@@ -40,9 +40,17 @@ After Super Gluu is enabled and configured, initiate the standard login sequence
 
 The app will prompt to approve or deny. Approve the authentication, and now the device has been associated with your account in the Gluu Server. For all future authentications, you will receive a push notification to approve or deny the request. 
 
-## What to Do About Lost Devices? 
+## Lost Devices and Account Recovery
 
-If someone loses their device, they will need to inform the Gluu system administrator, who can do the following: 
+There are two options for account recovery:
+
+### Self-service
+
+Using [Casa](https://casa.gluu.org), end-users can perform self-service management of their devices. 
+
+### Manual removal
+
+The Gluu system administrator can manually remove devices from end-users account by doing the following: 
     
   - Find the ‘DN’ of this user from LDAP 
     

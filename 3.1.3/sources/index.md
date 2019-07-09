@@ -53,4 +53,6 @@ The next version of Super Gluu will support localization in many languages. We'd
 - Mohib Zico, [Gluu](https://gluu.org)
 - Mustafa Baser, [Gluu](https://gluu.org)
 
-If you'd like to provide translations for a lanugage not currently supported, please [contact us](https://gluu.org/contact).
+If you'd like to provide translations for a language not currently supported, or see typos or grammar issues in your language of choice, please [contact us](https://gluu.org/contact).
+
+Thanks! 

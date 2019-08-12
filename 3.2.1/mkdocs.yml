@@ -1,0 +1,26 @@
+site_name: Super Gluu Docs
+site_description: Documenation for the Super Gluu Mobile Application
+site_favicon: 'favicon.ico'
+copyright: Copyright &copy; 2017, Gluu, Inc.
+docs_dir: sources
+repo_url: https://github.com/GluuFederation/docs-supergluu-prod/tree/3.0.0/3.0.0
+#theme: readthedocs
+theme_dir: ./theme/material/
+
+extra:
+    version: '3.0.0'
+    logo: 'gluu.png'
+    
+markdown_extensions:
+- admonition
+
+- toc:
+     permalink: '#'
+     
+pages:
+
+- Home: 'index.md'
+- User Guide: 'user-guide/index.md'
+- Administration Guide: 'admin-guide/index.md'
+- Developer Guide: 'developer-guide/index.md'
+
